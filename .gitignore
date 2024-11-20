@@ -1,0 +1,7 @@
+.env
+debug.log
+*.log
+
+*.tmp
+/node_modules
+/dist
