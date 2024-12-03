@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from "mongoose";
 
 import dotenv from "dotenv";
 
-import ImageModel, { Image, ImageInput } from "../model/image";
+import ImageModel, {  ImageInput } from "../model/image";
 
 dotenv.config();
 
