@@ -4,6 +4,8 @@ import {signIn} from "../../controllers/auth-controller/sign-in-email"
 import { logout } from "../../controllers/auth-controller/logout";
 import { googleSignIn } from "../../controllers/auth-controller/sign-in-with-google";
 
+import { getCurrentUser } from "../../controllers/auth-controller/get-current-user";
+
 import passport from "passport";
 import jwt from "jsonwebtoken";
 import dotenv from 'dotenv'
@@ -14,6 +16,7 @@ const router = express.Router();
 
 // Use router.post for handling POST requests
 router.post('/signup', signUp);
+router.get("/current-user", getCurrentUser); // Add the new route
 
 router.post('/signin', signIn);
 
