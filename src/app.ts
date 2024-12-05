@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 import passport from "passport";
 import './controllers/auth-controller/passport-config'
 
+import { dropIndex } from "./db_scripts/dropIndex";
+
 import imageRoutes from "./routes/gallery-images";
 import authRoutes from "./routes/auth/auth-routes"
 
@@ -74,6 +76,7 @@ app.get("/", (req, res) => {
   res.send("API is running");
   
 });
+// dropIndex();
 
 console.log('Allowed Origins:', allowedOrigins);
 console.log('Google Client ID:', process.env.GOOGLE_CLIENT_ID);

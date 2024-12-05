@@ -65,3 +65,8 @@ export const signUp: RequestHandler = async (req, res, next) => {
     next(error);
   }
 };
+
+
+
+
+
