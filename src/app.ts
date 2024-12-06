@@ -4,12 +4,13 @@ import connectDB from "./config/db";
 import cors from "cors";
 import dotenv from "dotenv";
 import passport from "passport";
+import Stripe from "stripe"
 import './controllers/auth-controller/passport-config'
 
-import { dropIndex } from "./db_scripts/dropIndex";
 
 import imageRoutes from "./routes/gallery-images";
 import authRoutes from "./routes/auth/auth-routes"
+import paymentIntent  from "./routes/stripe-payment"
 
 
 // Load environment variables
@@ -71,6 +72,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // API Routes
 app.use('/api', imageRoutes)
 app.use('/api/auth', authRoutes)
+app.use('/api', paymentIntent)
 
 app.get("/", (req, res) => {
   res.send("API is running");
