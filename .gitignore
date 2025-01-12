@@ -5,3 +5,7 @@ debug.log
 *.tmp
 /node_modules
 /dist
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

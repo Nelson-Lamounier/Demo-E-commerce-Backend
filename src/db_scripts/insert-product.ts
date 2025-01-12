@@ -19,6 +19,10 @@ const connectDB = async (): Promise<void> => {
   }
 };
 
+
+
+
+
 // Define the images to insert or update
 const categories = [
   {
@@ -26,43 +30,64 @@ const categories = [
     items: [
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man01.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product1.png",
         name: "Casual Fit Shirt",
         description: "Comfortable casual shirt perfect for daily wear.",
         price: 29.99,
       },
-      {
-        ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man02.png",
-        name: "Slim Fit T-Shirt",
-        description: "Modern slim fit T-shirt for casual outings.",
-        price: 19.99,
-      },
-      {
-        ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man03.png",
-        name: "Formal Suit Jacket",
-        description: "Elegant formal jacket ideal for business meetings.",
-        price: 99.99,
-      },
 
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man05.png",
-        name: "Denim Jeans",
-        description: "Durable denim jeans suitable for all occasions.",
-        price: 39.99,
-      },
-      {
-        ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man06.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product5.png",
         name: "Puffer Jacket",
         description: "Warm puffer jacket for cold weather conditions.",
         price: 89.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man04.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product6.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product7.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product8.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product9.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product10.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product11.png",
+        name: "Athletic Hoodie",
+        description: "Cozy hoodie designed for comfort and performance.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product12.png",
         name: "Athletic Hoodie",
         description: "Cozy hoodie designed for comfort and performance.",
         price: 49.99,
@@ -72,44 +97,67 @@ const categories = [
   {
     title: "Womens",
     items: [
+
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman01.png",
-        name: "Floral Summer Dress",
-        description: "A lightweight floral dress for casual summer days.",
-        price: 39.99,
-      },
-      {
-        ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman02.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women2.png",
         name: "Classic Denim Jacket",
         description: "A timeless denim jacket for layering and style.",
         price: 59.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman03.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women3.png",
         name: "Casual White T-Shirt",
         description: "A soft and breathable white T-shirt for daily wear.",
         price: 19.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman04.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women4.png",
         name: "Athletic Yoga Pants",
         description: "Stretchable yoga pants perfect for workouts or lounging.",
         price: 34.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman05.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women5.png",
         name: "Knitted Cardigan",
         description: "A warm and cozy cardigan for chilly days.",
         price: 49.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman06.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women6.png",
+        name: "Padded Winter Coat",
+        description: "A padded winter coat to keep you warm in the cold.",
+        price: 99.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women7.png",
+        name: "Padded Winter Coat",
+        description: "A padded winter coat to keep you warm in the cold.",
+        price: 99.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women8.png",
+        name: "Padded Winter Coat",
+        description: "A padded winter coat to keep you warm in the cold.",
+        price: 99.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women9.png",
+        name: "Padded Winter Coat",
+        description: "A padded winter coat to keep you warm in the cold.",
+        price: 99.99,
+      },
+
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women11.png",
         name: "Padded Winter Coat",
         description: "A padded winter coat to keep you warm in the cold.",
         price: 99.99,
@@ -121,45 +169,479 @@ const categories = [
     items: [
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman07.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product2.png",
         name: "Elegant Dress",
         description: "Stylish and comfortable dress for special occasions.",
         price: 49.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman09.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product3.png",
         name: "Casual Hoodie",
         description: "Cozy hoodie perfect for everyday wear.",
         price: 34.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/woman/woman08.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women10.png",
         name: "Athletic Leggings",
         description: "Flexible leggings for workouts or casual outings.",
         price: 29.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man07.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/products/catalog-women1.png",
         name: "Men's Sweatshirt",
         description: "Warm sweatshirt ideal for winter.",
         price: 39.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man08.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/products/mens-product4.png",
+        name: "Slim Fit T-Shirt",
+        description: "Comfortable and stylish slim fit T-shirt.",
+        price: 24.99,
+      },
+
+    ],
+  },
+  {
+    title: "Accessories01",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesorios1.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesorios2.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesorios4.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesories9.png",
         name: "Slim Fit T-Shirt",
         description: "Comfortable and stylish slim fit T-shirt.",
         price: 24.99,
       },
       {
         ImageUrl:
-          "https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/Man/man09.png",
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesories10.png",
         name: "Denim Jacket",
         description: "Classic denim jacket for all seasons.",
         price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesories11.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesories12.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesories/women-accesories13.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+    ],
+  },
+  {
+    title: "Arrivals01",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths1.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths2.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths3.png",
+        name: "Athletic Leggings",
+        description: "Flexible leggings for workouts or casual outings.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths4.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths5.png",
+        name: "Slim Fit T-Shirt",
+        description: "Comfortable and stylish slim fit T-shirt.",
+        price: 24.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/cloths/women-cloths6.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+    ],
+  },
+  {
+    title: "Arrivals02",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth15.png",
+        name: "Performance T-Shirt",
+        description: "A lightweight, moisture-wicking T-shirt designed for high-intensity workouts.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth14.png",
+        name: "Compression Shorts",
+        description: "Stretchable shorts offering muscle support and optimal range of motion.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth17.png",
+        name: "Training Tank",
+        description: "A breathable tank top designed for unrestricted movement during workouts",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth18.png",
+        name: "Sleeveless Training Tank",
+        description: "A breathable tank top designed for unrestricted movement during workouts",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth20.png",
+        name: "Layer Leggings",
+        description: "Flexible leggings for layering under shorts or joggers in colder conditions.",
+        price: 24.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/cloths/mens-cloth21.png",
+        name: "Base Layer Leggings",
+        description: "Flexible leggings for layering under shorts or joggers in colder conditions.",
+        price: 59.99,
+      },
+    ],
+  },
+  {
+    title: "Carry01",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios7.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios8.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios9.png",
+        name: "Athletic Leggings",
+        description: "Flexible leggings for workouts or casual outings.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios10.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios11.png",
+        name: "Slim Fit T-Shirt",
+        description: "Comfortable and stylish slim fit T-shirt.",
+        price: 24.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/accesorios/women-accesorios12.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+    ],
+  },
+  {
+    title: "Carry02",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios1.png",
+        name: "Elegant Gym Set",
+        description: "A set of versatile gym for strength training and stretching.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios2.png",
+        name: "Warm up Gym Set",
+        description: "A set of versatile gym for strength for training and stretching.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios3.png",
+        name: "Athletic Basic Gym Set",
+        description: "A set of versatile gym for strength for training and stretching.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios4.png",
+        name: "Gym Set Barbell",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios5.png",
+        name: "Luxury Gym Set Barbell",
+        description: "Comfortable and stylish slim fit T-shirt.",
+        price: 24.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios6.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios7.png",
+        name: "Denim Jacket",
+        description: "Classic denim jacket for all seasons.",
+        price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios8.png",
+        name: "Home Gym Set",
+        description: "Classic denim ",
+        price: 59.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/accesorios/mens-accessorios9.png",
+        name: "Denim Gym Set",
+        description: "Durable Gym Set to enhance grip during weightlifting.",
+        price: 59.99,
+      },
+    ],
+  },
+  {
+    title: "Accessories02",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/wallet/mens-wallet1.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/wallet/mens-wallet2.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/wallet/mens-wallet3.png",
+        name: "Athletic Leggings",
+        description: "Flexible leggings for workouts or casual outings.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/wallet/mens-wallet4.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+
+    ],
+  },
+  {
+    title: "Basic01",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic1.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic2.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic3.png",
+        name: "Athletic Leggings",
+        description: "Flexible leggings for workouts or casual outings.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic4.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic5.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic6.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic7.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic8.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/women/basic/women-basic9.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+    ],
+  },
+  {
+    title: "Basic02",
+    items: [
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic1.png",
+        name: "Elegant Dress",
+        description: "Stylish and comfortable dress for special occasions.",
+        price: 49.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic2.png",
+        name: "Casual Hoodie",
+        description: "Cozy hoodie perfect for everyday wear.",
+        price: 34.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic3.png",
+        name: "Athletic Leggings",
+        description: "Flexible leggings for workouts or casual outings.",
+        price: 29.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic4.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic5.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic6.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic7.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic8.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
+      },
+      {
+        ImageUrl:
+          "https://freelancer-websites.s3.eu-west-1.amazonaws.com/gymbs-ecommerce/preview/men/basic/men-basic9.png",
+        name: "Men's Sweatshirt",
+        description: "Warm sweatshirt ideal for winter.",
+        price: 39.99,
       },
     ],
   },

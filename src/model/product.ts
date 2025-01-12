@@ -23,7 +23,6 @@ const ProductSchema = new Schema<ProductInput>({
   ImageUrl: {
     type: String,
     required: true,
-    unique: true,
     trim: true,
   },
   name: {
