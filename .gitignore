@@ -1,11 +1,45 @@
+# Environment Variables
 .env
+
+# Logs
 debug.log
 *.log
 
+# Temporary Files and Folders
 *.tmp
-/node_modules
-/dist
+/tmp
+.yarn-integrity
+
+# Node.js Dependencies
+node_modules/
+.pnp/ß
+.pnp.js
+
+# Yarn Files
+.yarn/*
+!.yarn/releases/*
+!.yarn/plugins/*
+!.yarn/sdks/*
+!.yarn/versions/*
+
+# Build Output
+/dist/
+.build/
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# IDE Files
+.vscode/
+.idea/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Testing and Coverage
+coverage/
+.nyc_output/
+.jest/
