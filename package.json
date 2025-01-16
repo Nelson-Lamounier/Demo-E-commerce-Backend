@@ -5,6 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/connect": "^3.4.38",
     "@types/cors": "^2.8.17",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/mongoose": "^5.11.97",
@@ -26,8 +28,7 @@
     "dev": "nodemon src/app.ts",
     "build": "tsc",
     "dev:server": "nodemon src/app.ts",
-    "start": "node dist/app.js",
-    "postinstall": "yarn install --production"
+    "start": "node dist/app.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

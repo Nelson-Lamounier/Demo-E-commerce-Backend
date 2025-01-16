@@ -21,7 +21,7 @@ const allowedOrigins: string[] = process.env.ALLOWED_ORIGINS
 : [];
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;  // Ensure it's a number
 
 // Connect to MongoDB
 connectDB();
@@ -54,20 +54,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 
 
-// app.use(
-//   cors({
-//     origin: (origin, callback) => {
-//       if (!origin || allowedOrigins.includes(origin)) {
-//         callback(null, true);
-//       } else {
-//         callback(new Error("Not allowed by CORS"));
-//       }
-//     },
-//     credentials: true,
-//     methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
-//     allowedHeaders: ['Content-Type', "Authorization"]
-//   })
-// );
 
 // API Routes
 app.use('/api', imageRoutes)
@@ -81,8 +67,7 @@ app.get("/", (req, res) => {
 // dropIndex();
 
 console.log('Allowed Origins:', allowedOrigins);
-console.log('Google Client ID:', process.env.GOOGLE_CLIENT_ID);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
 
 

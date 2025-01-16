@@ -12,7 +12,7 @@ debug.log
 
 # Node.js Dependencies
 node_modules/
-.pnp/ß
+.pnp/
 .pnp.js
 
 # Yarn Files
