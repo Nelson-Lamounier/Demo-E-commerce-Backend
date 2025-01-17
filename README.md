@@ -5,8 +5,8 @@ This repository contains the backend code for the **Demo E-Commerce Application*
 ---
 
 ## 🔗 Live Application  
-👉 **Frontend Live Demo**: [Demo E-Commerce Website](https://github.com/Nelson-Lamounier/e-commerce-gymbs)  
-👉 **Frontend Repository**: [GitHub - demo-ecommerce-frontend](https://gymbs-ecommerceapp.netlify.app/)  
+👉 **Frontend Live Demo**: [Demo E-Commerce Website](https://gymbs-ecommerceapp.netlify.app/) 
+👉 **Frontend Repository**: [GitHub - demo-ecommerce-frontend](https://github.com/Nelson-Lamounier/e-commerce-gymbs)  
 
 ---
 
@@ -55,3 +55,4 @@ The API is used to support the frontend application. If you would like a walkthr
 > The **live frontend application** is available for testing.  
 
 If you're interested in learning more about this project, feel free to reach out!  
+
