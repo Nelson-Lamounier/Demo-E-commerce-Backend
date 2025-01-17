@@ -9,8 +9,6 @@ dotenv.config();
 // Function to handle user sign-up
 export const signUp: RequestHandler = async (req, res, next) => {
   try {
-    console.log('Request Headers:', req.headers);
-    console.log('Request Body:', req.body); // Add this line
     // Extract user input from the request body
     const { username, email, password, receiveEmails } = req.body;
 

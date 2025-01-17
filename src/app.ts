@@ -66,7 +66,6 @@ app.get("/", (req, res) => {
 });
 // dropIndex();
 
-console.log('Allowed Origins:', allowedOrigins);
 
 app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
 
