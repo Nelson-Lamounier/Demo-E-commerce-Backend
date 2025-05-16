@@ -15,12 +15,12 @@ node_modules/
 .pnp/
 .pnp.js
 
-# Yarn Files
-.yarn/*
-!.yarn/releases/*
-!.yarn/plugins/*
-!.yarn/sdks/*
-!.yarn/versions/*
+# # Yarn Files
+# .yarn/*
+# !.yarn/releases/*
+# !.yarn/plugins/*
+# !.yarn/sdks/*
+# !.yarn/versions/*
 
 # Build Output
 /dist/

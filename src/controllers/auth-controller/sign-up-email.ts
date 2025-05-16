@@ -1,5 +1,7 @@
+/** @format */
+
 import { Request, RequestHandler, Response } from "express";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../../model/user";
 import dotenv from "dotenv";
@@ -63,8 +65,3 @@ export const signUp: RequestHandler = async (req, res, next) => {
     next(error);
   }
 };
-
-
-
-
-

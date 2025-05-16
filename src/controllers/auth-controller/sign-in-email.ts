@@ -1,5 +1,7 @@
+/** @format */
+
 import { RequestHandler } from "express";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../../model/user";
 import dotenv from "dotenv";
@@ -24,9 +26,9 @@ export const signIn: RequestHandler = async (req, res, next) => {
     }
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
-    if(!isMatch) {
-        res.status(401).json({message: "Invalid email or password"});
-        return;
+    if (!isMatch) {
+      res.status(401).json({ message: "Invalid email or password" });
+      return;
     }
     // Generate JWT token
     const token = jwt.sign(

@@ -1,3 +1,5 @@
+/** @format */
+
 import { Request, Response } from "express";
 import Image from "../../model/image";
 
@@ -6,7 +8,7 @@ export const getImagesByCategory = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const {category} = req.query
+  const { category } = req.query;
   console.log(`Fetching images for category ${category}`);
   try {
     // Query the database for images with the specified category
